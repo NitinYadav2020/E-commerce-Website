@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+:root{
+    --main-bg-color:#0a5fe3;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: var(--main-bg-color);
+    font-family: 'Bree Serif', serif;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 120px;
+    padding: 0 14px;
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 20px;
+    font-size: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search input{
+    width: 30vw;
+    /* width: 350px; */
+    padding: 2px;
+    border-radius: 3px;
+    /* margin: 0 150px 0 56px; */
+    margin: 0 10px 0 180px;
+    padding: 0 10px;
+}
+.card{
+    max-width: 93vw;
+    margin: 25px auto;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    /* overflow: hidden; */
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 22px;
+}
+.card h2{
+    font-family: 'Rokkitt', serif;
+}
+.card-item img:hover{
+    /* opacity: 0.7; */
+    transform: translate3d(10px,0,0px);  
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+.container{
+    min-height:  calc(100vh - 50px - 12vh
+    );
+}
+footer{
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 12vh;
+    font-family: 'Bree Serif', serif;
+}
